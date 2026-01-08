@@ -1,7 +1,7 @@
 import json
 import psycopg2
 
-REPORT_FILE = "report.json"
+REPORT_FILE = "/home/moosechild/projects/learning-journey/python_tasks/report.json"
 
 # Connect using the Unix socket as the current user (moosechild)
 conn = psycopg2.connect(
