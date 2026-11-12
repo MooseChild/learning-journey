@@ -1,7 +1,8 @@
+import os
 import json
 import psycopg2
 
-REPORT_FILE = "/home/moosechild/projects/learning-journey/python_tasks/report.json"
+REPORT_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "report.json")
 
 # Connect using the Unix socket as the current user (moosechild)
 conn = psycopg2.connect(

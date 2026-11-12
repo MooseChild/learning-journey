@@ -1,7 +1,8 @@
+import os
 import psycopg2
 from datetime import datetime
 
-CSV_FILE = "/home/moosechild/projects/learning-journey/devops_monitor/data/metrics.csv"
+CSV_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "metrics.csv")
 
 conn = psycopg2.connect(
     dbname="log_monitor",

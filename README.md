@@ -1,24 +1,18 @@
 # learning-journey
-Data Engineering study notes and scripts
 
-# Data Engineering Learning Journey
+My path into Data Engineering: study notes, small exercises and the first pipeline I built.
 
-This repository tracks my transition into Data Engineering.
+The plan, my progress and credentials are in [ROADMAP.md](ROADMAP.md).
 
-## Phase 0: Foundations & DevOps Monitor v1
-I have built a local monitoring pipeline that tracks the health of my Proxmox development environment.
+## What is here
 
-### Architecture
-- **Collector:** Bash script (`collect_metrics.sh`) gathering CPU, RAM, and Disk stats.
-- **Scheduler:** Linux `cron` running every 5 minutes.
-- **Storage:** PostgreSQL database (`log_monitor`).
-- **ETL:** Python script (`ingest_metrics.py`) using `psycopg2` for incremental data loading.
+| Folder | What it is |
+|---|---|
+| [`devops_monitor/`](devops_monitor/) | DevOps Monitor v1: a small pipeline that collects system metrics, loads them into PostgreSQL and analyses them with SQL |
+| [`exercises/log-parsing/`](exercises/log-parsing/) | Early Python practice: parse a log file, structure it as JSON, insert it into Postgres |
 
-### Skills Mastered
-- **Linux:** User management, SSH, Cron, Bash scripting.
-- **SQL:** Schema design, Aggregations (`AVG`, `MAX`), Time-bucketing (`date_trunc`).
-- **Python:** File I/O, JSON/CSV parsing, Database connectivity.
-- **Git:** Version control, `.gitignore`, remote syncing.
-
-## Roadmap and credentials
-The full eleven-step plan, current progress and credentials are in [ROADMAP.md](ROADMAP.md).
+## Skills practised
+- **Linux:** users, SSH, cron, Bash scripting
+- **SQL:** schema design, aggregations (`AVG`, `MAX`), time-bucketing with `date_trunc`
+- **Python:** file I/O, CSV and JSON parsing, PostgreSQL with `psycopg2`
+- **Git:** version control, `.gitignore`, remote syncing
