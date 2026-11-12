@@ -19,3 +19,6 @@ I have built a local monitoring pipeline that tracks the health of my Proxmox de
 - **SQL:** Schema design, Aggregations (`AVG`, `MAX`), Time-bucketing (`date_trunc`).
 - **Python:** File I/O, JSON/CSV parsing, Database connectivity.
 - **Git:** Version control, `.gitignore`, remote syncing.
+
+## Roadmap and credentials
+The full eleven-step plan, current progress and credentials are in [ROADMAP.md](ROADMAP.md).
